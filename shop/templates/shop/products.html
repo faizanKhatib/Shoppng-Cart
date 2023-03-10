@@ -1,0 +1,46 @@
+{% extends "shop/basic.html" %} 
+
+{% block title  %} {{Product.product_name}} - FAC Shop{% endblock  %}
+{% block body %}
+<h1>this is product page</h1>
+<div class="container my-3">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="row">
+                <img src="/media/{{Product.image}}" width="233px" height="380px" alt="">
+            </div>
+            <div class="row my-2">
+                <button class="btn btn-dark mx-3">Buy</button>
+                <button class="btn btn-dark ">Add To Cart</button>
+            </div>
+                
+        </div>
+        <div class="col-md-8">
+            <h5>{{Product.product_name}}</h5>
+            <p>{{Product.decs}}</p>
+            <!-- <p><b> Price - Rs.{{Product.price}}</b></p> -->
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock  %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
